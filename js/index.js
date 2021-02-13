@@ -148,7 +148,11 @@ function renderSelectorGroup(selectorGroup, parentSelectorID) {
 
     if (!!selectorObject.selected) {
       selectorClick(selector);
+    } else {
+      selectorClick(selector);
+      selectorClick(selector);
     }
+
     if (!!selectorObject.opened) {
       toggleSelectorOpened(selector, selectorObject);
     }
